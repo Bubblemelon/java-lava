@@ -2,6 +2,8 @@
 
 My practice scripts in Java ☕
 
+![Coffee Break Picture from Dribbble](https://cdn.dribbble.com/users/1294892/screenshots/3463897/tea-01.jpg)
+
 ## Catalog
 
 ### [Histogram.java]()
