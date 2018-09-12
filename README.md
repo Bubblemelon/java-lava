@@ -10,7 +10,7 @@ My practice scripts in Java ☕
 
 > This Java program will request a file and will print out the frequency of letters (upper and lowercase), numbers, and symbols i.e. all keyboard characters e.g. " " the space character too.
 
-### [Fraction.java](javalava/Fraction.java) && [DemoFraction.java](javalava/DemoFraction.java)
+### [Fraction.java](Fraction.java) && [DemoFraction.java](DemoFraction.java)
 
 > The Java class for Fraction has a number of methods, i.e. inverting, negating, checks if two fractions are equal, returning the value of a fraction as a double and adding. More details are explained in Fraction.java. 
 > 
