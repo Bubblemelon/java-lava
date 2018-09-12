@@ -1,9 +1,11 @@
 public class Fraction {
 	
-	// step 1
+	// private variables
 	private int numerator, denominator;
 	
-	// step 2
+	// creates a fraction
+	// If both n and d are negative then fraction is positive
+	// changes d to a positve if negative
 	public Fraction(int n, int d) {
 		
 		if( d < 0 ) {
@@ -19,13 +21,14 @@ public class Fraction {
 		}	
 	}
 	
-	// step 3
+	// creates a default fraction
 	public Fraction() {
 		this.denominator = 1;
 		this.numerator =0;
 	}
 	
-	// step 4
+	// step 5
+	// Overrides the toString method for printing
 	@Override
 	public String toString() {
 		String d, n;
@@ -35,7 +38,8 @@ public class Fraction {
 		return "(" + n + "/" + d + ")";
 	}
 	
-	//step 5
+	// step 6
+	// inverts d with n and n with d
 	public void invert() {
 		
 		int tmp_d = denominator;
@@ -55,12 +59,15 @@ public class Fraction {
 		}	
 		
 	}
-	//step 6
+	// step 7
+	// negates only the numerator
 	public void negate() {
 		this.numerator = (-1)*this.numerator;
 	}
 	
-	//step 7
+	// step 8
+	// checks if two fractions are equal
+	// returns true if equals
 	public boolean equals(Fraction f) {
 		int left = f.numerator * this.denominator;
 		int right = f.denominator * this.numerator;
@@ -74,14 +81,16 @@ public class Fraction {
 		return false;
 	}
 	
-	//step 8
+	// step 8
+	// returns the fraction value as a double
 	public double toDouble()
 	{	
 		// https://stackoverflow.com/questions/3144610/integer-division-how-do-you-produce-a-double
 		return this.numerator *1.0 / this.denominator;
 	}
 	
-	//step 9
+	// step 9
+	// add two fractions together and returns a new fraction as a result
 	public Fraction add(Fraction f) {
 		
 		int sum_n;
