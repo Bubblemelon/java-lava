@@ -1,5 +1,5 @@
 // this class extends the Fraction class
-public class DemoFraction extends Fraction{
+public class FractionDemo extends Fraction{
 	
 	public static void main(String[] args) {
 			
