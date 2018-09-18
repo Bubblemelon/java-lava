@@ -18,7 +18,7 @@ My practice scripts in Java ☕
 
 > The Java class for Fraction has a number of methods, i.e. inverting, negating, checks if two fractions are equal, returning the value of a fraction as a double and adding. More details are explained in Fraction.java. 
 > 
-> The use of Fraction's methods are shown in the [DemoFraction.java](Fraction/DemoFraction.java) file. 
+> The use of Fraction's methods are shown in the [FractionDemo.java](Fraction/FractionDemo.java) file. 
 
 ## [Bank Accounts](Bank_Accounts/)
 
