@@ -20,3 +20,11 @@ My practice scripts in Java ☕
 > 
 > The use of Fraction's methods are shown in the [DemoFraction.java](Fraction/DemoFraction.java) file. 
 
+## [Bank Accounts](Bank_Accounts/)
+
+> The Bank Account folder consists of three java files. [Account.java](Bank_Accounts/Account.java) defines Account specific methods and variables i.e. to deposit/withdraw money & to check if the account number exists. 
+> The [Bank.java](Bank_Accounts/Bank.java) defines the Bank class, creates a bank name, to allocate the number of accounts the bank can open, opening and closing accounts of the bank.
+>
+> The [BankDemo.java](/Bank_Account/BankDemo.java) consicely demonstrates what the Bank.java class can do, where depending on the methods, e.g. to add money to an account, would require using the Account.java `deposit()` method. 
+>
+> This application can be complied by running, `javac Account.java Bank.java BankDemo.java`. To start the demo, simply run `java BankDemo` in the same directory. 
