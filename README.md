@@ -16,7 +16,7 @@ My practice scripts in Java ☕
 
 ### [Fraction](Fraction/Fraction.java)
 
-> The Java class for Fraction has a number of methods, i.e. inverting, negating, checks if two fractions are equal, returning the value of a fraction as a double and adding. More details are explained in Fraction.java. 
+> The Java class for Fraction has a number of methods, i.e. inverting, negating, checks if two fractions are equal, returning the value of a fraction as a double and adding. More details are explained in `Fraction.java`. 
 > 
 > The use of Fraction's methods are shown in the [FractionDemo.java](Fraction/FractionDemo.java) file. 
 
@@ -28,3 +28,7 @@ My practice scripts in Java ☕
 > The [BankDemo.java](/Bank_Account/BankDemo.java) consicely demonstrates what the Bank.java class can do, where depending on the methods, e.g. to add money to an account, would require using the Account.java `deposit()` method. 
 >
 > This application can be complied by running, `javac Account.java Bank.java BankDemo.java`. To start the demo, simply run `java BankDemo` in the same directory. 
+
+### [Balance Array Elements](Balance_Array_Elements/ArrayBalance.java)
+
+> There is only one method in `ArrayBalance.java`. This method takes an array of integers and compares the sum of theses elements from each end. If the sums of both ends are equal, then the array is considered balanced. 
