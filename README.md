@@ -35,6 +35,10 @@ My practice scripts in Java ☕
 
 ### [Online Store](Online_Store/)
 
+<!-- <img src="/Online_Store/OnlineStoreDemo.gif" witdh=px> -->
+
+![A gif showing the output of this program](/Online_Store/OnlineStoreDemo.gif)
+
 > This program mimics the interaction between a user and an online store.  
 >
-> Option `1`, which allows the Online Store admin to add number of products to the store. In this case, only a maximum of 10 products are allowed. To see the available products for purchase, type in `2` to select option 2 i.e. _All Product Information in Store_. Finally, the user has `3` option to order a product or products by mentioning the product's number ID. This process is completed by typing `0`. Lastly, option `4` exits the program. 
+> Option `1`, which allows the Online Store admin to add number of products to the store. In this case, only a maximum of 10 products are allowed. To see the available products for purchase, type in `2` to select option 2 i.e. _All Product Information in Store_. Finally, the user has `3` option to order a product or products by mentioning the product's number ID. This process is completed by typing `0`. Lastly, option `4` exits the program.
