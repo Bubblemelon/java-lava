@@ -32,6 +32,8 @@ My practice scripts in Java ☕
 ### [Balance Array Elements](Balance_Array_Elements/ArrayBalance.java)
 
 > There is only one method in `ArrayBalance.java`. This method takes an array of integers and compares the sum of theses elements from each end. If the sums of both ends are equal, then the array is considered balanced.
+>
+> This is otherwise known as [canBalance()](https://techdevguide.withgoogle.com/resources/canbalance-problem-arrays-non-empty/) problem.
 
 ### [Online Store](Online_Store/)
 
