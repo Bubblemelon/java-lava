@@ -46,3 +46,9 @@ My practice scripts in Java ☕
 >
 > Design Considerations:  
 > Ideally there should be more than 10 products in an online store and that a user (not the store admin) should not have access to adding products to this online store. This program was built for simplicity.
+
+### [Max Profit](/Max_Profit/Stock.java)
+
+> This class has only one function, i.e. `maxProfit()` that takes an array of stock prices of a particular day.  
+> `maxProfit()` will return the price to buy at and the price to sell at, that would generate the maximum profit within that given day.  
+> The purpose of `maxProfit` was inspired from [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/), a code challenge on LeetCode.
