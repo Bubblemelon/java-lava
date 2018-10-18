@@ -58,5 +58,5 @@ My practice scripts in Java ☕
 > This program mimics a simple [hangman game]( https://en.wikipedia.org/wiki/Hangman_(game) ).  
 > The user is allowed to define a word to guess and offer it to another player, using the same terminal where the program was executed.
 
-<!-- <img src="/Hangman/Hangman.gif" height=700> -->
-![A gif showing the output of Hangman](/Hangman/Hangman.gif)
+<img src="/Hangman/Hangman.gif" width=867.99 height=700 >
+<!-- ![A gif showing the output of Hangman](/Hangman/Hangman.gif) -->
