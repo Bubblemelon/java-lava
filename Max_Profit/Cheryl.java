@@ -155,7 +155,7 @@ public class Cheryl {
 
 	public static void main(String[] args) {
 
-		Cheryl c = new Cheryl();
+		Cheryl oo = new Cheryl();
 
 		int[] xx = {};
 		int[] x = {1};
@@ -172,7 +172,7 @@ public class Cheryl {
 		int[] g = {2, 4, 1}; // returns 2
 		int[] h = {3, 2, 6, 5, 0, 3}; // returns 4
 
-		System.out.println(c.maxProfit(a));
+		System.out.println(oo.maxProfit(a));
 
 	}
 
