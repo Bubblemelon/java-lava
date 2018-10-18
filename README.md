@@ -40,7 +40,7 @@ My practice scripts in Java ☕
 <!-- <img src="/Online_Store/OnlineStoreDemo.gif" witdh=px> -->
 > This program mimics the interaction between a user and an online store.
 
-![A gif showing the output of this program](/Online_Store/OnlineStoreDemo.gif)
+![A gif showing the output of Online Store](/Online_Store/OnlineStoreDemo.gif)
 
 > Option `1`, which allows the Online Store admin to add number of products to the store. In this case, only a maximum of 10 products are allowed. To see the available products for purchase, type in `2` to select option 2 i.e. _All Product Information in Store_. Finally, the user has `3` option to order a product or products by mentioning the product's number ID. This process is completed by typing `0`. Lastly, option `4` exits the program.
 >
@@ -52,3 +52,11 @@ My practice scripts in Java ☕
 > This class has only one function, i.e. `maxProfit()` that takes an array of stock prices of a particular day.  
 > `maxProfit()` will return the price to buy at and the price to sell at, that would generate the maximum profit within that given day.  
 > The purpose of `maxProfit` was inspired from [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/), a code challenge on LeetCode.
+
+### [Hangman](/HangMan/Hangman.java)
+
+> This program mimics a simple [hangman game]( https://en.wikipedia.org/wiki/Hangman_(game) ).  
+> The user is allowed to define a word to guess and offer it to another player, using the same terminal where the program was executed.
+
+<!-- <img src="/Hangman/Hangman.gif" height=700> -->
+![A gif showing the output of Hangman](/Hangman/Hangman.gif)
