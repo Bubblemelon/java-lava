@@ -47,11 +47,12 @@ My practice scripts in Java ☕
 > Design Considerations:  
 > Ideally there should be more than 10 products in an online store and that a user (not the store admin) should not have access to adding products to this online store. This program was built for simplicity.
 
-### [Max Profit](/Max_Profit/Stock.java)
+### [Max Profit](/Max_Profit)
 
-> This class has only one function, i.e. `maxProfit()` that takes an array of stock prices of a particular day.  
-> `maxProfit()` will return the price to buy at and the price to sell at, that would generate the maximum profit within that given day.  
-> The purpose of `maxProfit` was inspired from [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/), a code challenge on LeetCode.
+> [Stock.java](/Max_Profit/Stock.java) has only one function, i.e. `maxProfit()` that takes an array of stock prices of a particular day. This is my first attempt at the maxProfit problem, similar to [Stock Buy Sell to Maximize Profit](https://www.geeksforgeeks.org/stock-buy-sell/).  
+> `maxProfit()` will return the price to buy and to sell at, that would generate the maximum profit within that given day.
+>
+> [Leetcode.java](/Max_Profit/Leetcode.java) contains my solution to the problem at [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/), a code challenge on LeetCode. I consider this an improvement to `Stock.java`. However, it does not have an optimal runtime.
 
 ### [Hangman](/HangMan/Hangman.java)
 
