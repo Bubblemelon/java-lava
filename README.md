@@ -61,3 +61,15 @@ My practice scripts in Java ☕
 
 <img src="/Hangman/Hangman.gif" width=867.99 height=700 >
 <!-- ![A gif showing the output of Hangman](/Hangman/Hangman.gif) -->
+
+### [Trapping Rain Water](/Trapping_Rain_Water/)
+
+> [Rain.java](/Trapping_Rain_Water/Rain.java) has only one function, i.e. `waterTrapped()` that takes an array of heights (could be heights of either valleys or buildings) and returns the amount of water collected/trapped between the bounds i.e. the valleys or buildings.  
+>
+> This function's approach iterates the array of heights from left to right and then in a separate loop from right to left. Each of these iterations store the maximum height encountered at an index of the heights array. The maximum height stored at an index of a current right or left element takes the value of its previous height unless a higher value is encountered at the heights array.   
+>
+> The purpose is to overlay the left and right arrays over each other and then find where water can actually be stored.
+>
+> Having iterated in both direction solves the issue where, e.g. when iterating only from left to right, there is the possibility that the valleys begin to only decline and the method set for comparison is only to find the higher bound. This will ignore the water collected between lower valleys than previously encountered.
+>
+> An illustration of the above explanation can be found as comments in [Rain.java](/Trapping_Rain_Water/Rain.java).  
