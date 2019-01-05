@@ -53,6 +53,8 @@ My practice scripts in Java ☕
 > `maxProfit()` will return the price to buy and to sell at, that would generate the maximum profit within that given day.
 >
 > [Leetcode.java](/Max_Profit/Leetcode.java) contains my solution to the problem at [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/), a code challenge on LeetCode. I consider this an improvement to `Stock.java`. However, it does not have an optimal runtime.
+>
+> Leetcode.java is [BestTimeToBuyAndSellStock.java](https://github.com/Bubblemelon/code-nibbles/blob/master/leetcode/BestTimeToBuyAndSellStock.java) at my `code-nibbles` repo.
 
 ### [Hangman](/HangMan/Hangman.java)
 
@@ -72,4 +74,10 @@ My practice scripts in Java ☕
 >
 > Having iterated in both direction solves the issue where, e.g. when iterating only from left to right, there is the possibility that the valleys begin to only decline and the method set for comparison is only to find the higher bound. This will ignore the water collected between lower valleys than previously encountered.
 >
-> An illustration of the above explanation can be found as comments in [Rain.java](/Trapping_Rain_Water/Rain.java).  
+> An illustration of the above explanation can be found as comments in [Rain.java](/Trapping_Rain_Water/Rain.java).
+>
+> Rain.java is [TrappingRainWater.java](https://github.com/Bubblemelon/code-nibbles/blob/master/leetcode/TrappingRainWater.java) at my `code-nibbles` repo.
+
+### [More Java ☕ Stuff](https://github.com/cherylfong)
+
+See my [repositories](https://github.com/cherylfong) for Android apps! 📱
