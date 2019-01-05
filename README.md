@@ -80,4 +80,4 @@ My practice scripts in Java ☕
 
 ### [More Java ☕ Stuff](https://github.com/cherylfong)
 
-See my [repositories](https://github.com/cherylfong) for Android apps! 📱
+See my Android app [repositories](https://github.com/cherylfong)! 📱
