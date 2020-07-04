@@ -17,6 +17,14 @@ public class Multiply {
         );
     }
 
+    // overview of this program
+    public Multiply(){
+
+        intro();
+       
+    }
+
+
     public static void main(String[] args) {
 
     }
