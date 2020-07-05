@@ -17,11 +17,43 @@ public class Multiply {
         );
     }
 
+    // queries the user for an input matching the inputCondition otherwise,
+    // shows an errorMessage and repeat query.
+    public String prompt(String query, String inputCondition, String errorMessage){
+
+        Scanner s = new Scanner(System.in);
+        String userInput = "";
+
+        while(true){
+            try{
+
+                System.out.println(query);
+                userInput = s.nextLine();
+
+                if(userInput.length() != 0)
+                {
+                    // Only one letter
+                    if(!userInput.matches(inputCondition)){
+                        // \u26D4 No Entry Symbol
+                        throw new IllegalArgumentException(errorMessage);
+                    }
+                    break;
+                }
+
+            }catch(IllegalArgumentException e){
+
+                System.out.println(e.getMessage());
+            }
+        }
+
+        return userInput;
+
+    }
+
     // overview of this program
     public Multiply(){
 
         intro();
-       
     }
 
 
