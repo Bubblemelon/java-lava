@@ -2,6 +2,10 @@ import java.util.*;
 
 public class Multiply {
 
+    // global variables
+    // user inputs
+    String option;
+
     // about this program
     public void intro(){
 
@@ -50,10 +54,38 @@ public class Multiply {
 
     }
 
+    /**
+     * References:
+     * Emoji List v13.0 - https://unicode.org/emoji/charts/full-emoji-list.html
+     * To search for the corresponding "C/C++/Java source code" from Unicode -
+     * http://www.fileformat.info/info/unicode/char/search.htm
+     * e.g. Unicode U+26D4 == \u26D4
+     */
+    public void askUserOption(){
+
+        Scanner s = new Scanner(System.in);
+        String userInput;
+
+
+        // requesting one number character between 1 and 2
+        // \u26D4 is the No Entry Symbol
+        userInput = prompt(
+            "> Type \" 1 \" for Option (1) or Type \" 2 \" for Option (2):",
+            "[1-2]",
+            "\n\u26D4  Error: No other characters allowed, please input a single digit value between 1 and 2!\n"
+            );
+
+        // update chosen option
+        // For sake of clarity. Alternatively, use "option" alone without a local variable.
+        option = userInput;
+
+    }
+
     // overview of this program
     public Multiply(){
 
         intro();
+        askUserOption();
     }
 
 
