@@ -21,6 +21,22 @@ public class Multiply {
         );
     }
 
+    public void aboutMultiplication(){
+
+        System.out.println(
+            "\n----------------------------------------------\n" +
+            "- \uD83D\uDCDD  Know the terms:                         -\n" +
+            "- Multiplication = Multiplicand x Multiplier -\n" +
+            "-                                            -\n" +
+            "- Let's begin!                               -\n" +
+            "- Find the product of x and y.  \uD83E\uDD14            -\n" +
+            "-                                            -\n" +
+            "- This can be expressed as:                  -\n" +
+            "- product = x * y                            -\n" +
+            "----------------------------------------------"
+        );
+    }
+
     // queries the user for an input matching the inputCondition otherwise,
     // shows an errorMessage and repeat query.
     public String prompt(String query, String inputCondition, String errorMessage){
@@ -86,6 +102,7 @@ public class Multiply {
 
         intro();
         askUserOption();
+        aboutMultiplication();
     }
 
 
