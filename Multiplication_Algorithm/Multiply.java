@@ -70,6 +70,19 @@ public class Multiply {
 
     }
 
+    // repeats the specified string in the number of desired repetitions
+    public String stringRepeater(int numberOfRepeats, String str){
+
+        String result = "";
+
+        for(int i = 0; i < numberOfRepeats; i++){
+            result += str;
+        }
+
+        return result;
+
+    }
+
     /**
      * References:
      * Emoji List v13.0 - https://unicode.org/emoji/charts/full-emoji-list.html
