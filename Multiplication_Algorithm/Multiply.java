@@ -5,6 +5,11 @@ public class Multiply {
     // global variables
     // user inputs
     String option;
+    String x = "x";
+    String y = "y";
+
+    final String caseInsensitiveYesNo = "[Nn][oO]|[yY][eE][sS]|[yY]|[nN]";
+    final String caseInsensitiveYes = "[yY][eE][sS]|[yY]";
 
     // about this program
     public void intro(){
@@ -110,12 +115,85 @@ public class Multiply {
 
     }
 
+    public void askUserValues(){
+
+        Scanner s = new Scanner(System.in);
+        String userInput = "";
+
+        if(!x.equals("x")){
+
+            userInput = prompt(
+                "\n> Do you want to change the current value of the multiplicand, x = " + x + " ?",
+                caseInsensitiveYesNo,
+                "\n\u26D4  Error: To proceed with the change, please enter \"yes\" or \"y\"." +
+                "\n          To keep x as " + x + ", enter \"no\" or \"n\". Your response is case-insensitive."
+                );
+
+        }
+
+        // evaluates user input first
+        if(userInput.matches(caseInsensitiveYes) || x.equals("x")){
+
+            // requesting any length of a number value
+            userInput = prompt(
+                "\n> Enter your value for the multiplicand i.e. value for x:",
+                "[0-9]+",
+                "\n\u26D4  Error: No other characters allowed, please input a numeric value!\n"
+                );
+
+            x = userInput;
+
+        }
+
+        // 12 chars of leading dashes
+        // ends with 5 or more chars of " * y -", y is variable length
+        System.out.println(
+            "\n" + stringRepeater(12 + x.length() + 5 + y.length() , "-") + "\n" +
+            "| product = " + x + " * "+ y + " |\n" +
+            stringRepeater(12 + x.length() + 5 + y.length() , "-")
+            );
+
+        if(!y.equals("y")){
+
+            userInput = prompt(
+                "\n> Do you want to change the current value of the multiplier, y = " + y + " ?",
+                caseInsensitiveYesNo,
+                "\n\u26D4  Error: To proceed with the change, please enter \"yes\" or \"y\"." +
+                "\n          To keep y as " + y + ", enter \"no\" or \"n\". Your response is case-insensitive."
+                );
+        }
+
+        // evaluates user input first
+        if(userInput.matches(caseInsensitiveYes) || y.equals("y")){
+
+            // requesting any length of a number value
+            userInput = prompt(
+                "\n> Enter your value for the multiplier i.e. value for y:",
+                "[0-9]+",
+                "\n\u26D4  Error: No other characters allowed, please input a numeric value!\n"
+                );
+
+            y = userInput;
+        }
+
+        // 12 chars of leading dashes
+        // in between 3 chars " * " before y value
+        // ends with 2 chars " -"
+        System.out.println(
+            "\n" + stringRepeater(12 + x.length() + y.length() + 5 , "-") + "\n" +
+            "| product = " + x + " * " + y + " |\n" +
+            stringRepeater(12 + x.length() + y.length() + 5 , "-")
+            );
+
+    }
+
     // overview of this program
     public Multiply(){
 
         intro();
         askUserOption();
         aboutMultiplication();
+        askUserValues();
     }
 
 
