@@ -88,6 +88,40 @@ public class Multiply {
 
     }
 
+    // expands the digits in @param with respect to its place value
+    // return the expanded terms as an array
+    // e.g. 12 = 2, 10
+    public int[] splitDigits(String stringValue){
+
+        int value = Integer.parseInt(stringValue);
+        int temp_v = value;
+        int placeholder =  0; // primitives are zero by default; this is for my sake
+        int placeValue = 1;
+
+        // to determine the size of result array - not necessary if using ArrayList
+        // I'm trying to challenge myself to not use ArrayLists
+        while(temp_v != 0){
+            temp_v /= 10;
+            placeholder++;
+        }
+
+        int[] result = new int[placeholder];
+
+        //reset local variables to reuse
+        placeholder = 0;
+        temp_v = value;
+
+        while(temp_v != 0){
+            result[placeholder] = (temp_v % 10) * placeValue;
+            placeValue *= 10;
+            placeholder++;
+            temp_v /= 10;
+        }
+
+        return result;
+
+    }
+
     /**
      * References:
      * Emoji List v13.0 - https://unicode.org/emoji/charts/full-emoji-list.html
