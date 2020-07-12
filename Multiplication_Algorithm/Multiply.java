@@ -7,6 +7,8 @@ public class Multiply {
     String option;
     String x = "x";
     String y = "y";
+    String dashLine = "";
+    String setupBase = ""; //shows the x and y over a horizontal line
 
     final String caseInsensitiveYesNo = "[Nn][oO]|[yY][eE][sS]|[yY]|[nN]";
     final String caseInsensitiveYes = "[yY][eE][sS]|[yY]";
@@ -119,6 +121,34 @@ public class Multiply {
         }
 
         return result;
+
+    }
+
+    // prints the setup of the desired multiplication
+    public void methodSetup(){
+
+        int product = Integer.parseInt(x) * Integer.parseInt(y);
+
+
+        // lead with 3 spaces
+        int numberOfLeadingSpaces = 3;
+        String projectedLine = "   " + Integer.toString(product);
+
+        // easier to read approach
+        // optimized alternative is to use 1 loop with if statements
+        // forms the horizontal line below the Multiplicand and multiplier
+        dashLine = stringRepeater(projectedLine.length(), "-");
+
+        // find the difference in space characters needed between dash line and input values x and y
+
+        String spaceGapTop = stringRepeater( Math.abs(x.length() - (dashLine.length()
+                                            - numberOfLeadingSpaces) ), " ");
+        String spaceGapBottom = stringRepeater( Math.abs(y.length() - (dashLine.length()
+                                                - numberOfLeadingSpaces) ), " ");
+
+        setupBase = "\n" + "   " + spaceGapTop + x +
+                    "\n" + " X " + spaceGapBottom + y +
+                    "\n" + dashLine;
 
     }
 
