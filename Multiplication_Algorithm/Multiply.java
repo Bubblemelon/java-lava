@@ -251,6 +251,74 @@ public class Multiply {
 
     }
 
+    // to print the method for option 2
+    public void printShortCutMethod(int[] intermediateValues){
+
+        System.out.println(setupBase);
+
+        for(int i = 0; i < intermediateValues.length; i++){
+
+            String element = Integer.toString(intermediateValues[i]);
+            String tempConcat = "";
+
+            /*
+            * the final element stores the result or product value
+            * see Multiplication() function:
+            * intermediateValues[intermediateValues.length - 1] = result;
+            */
+            if( i == intermediateValues.length - 1){
+                System.out.println(dashLine); // print the dash line before animating the final value
+            }
+
+            for(int j = element.length() - 1 ; j >= 0 ; j--){
+
+                try{
+
+                    tempConcat = element.charAt(j) + tempConcat; // insert to the front of string
+
+                    // when dealing with the element before the result value, add plus sign
+                    // when final character of this element is printed
+                    if( i == (intermediateValues.length - 2) && j == 0 ){
+
+                        System.out.print(
+                            // account for the 3 leading characters
+                            " + " +
+                            stringRepeater(
+                                ( (dashLine.length() - 3 )- tempConcat.length() ), " ") + tempConcat
+                                + "\r"
+                            );
+
+                    }else{
+
+                        System.out.print(
+                            stringRepeater( ( dashLine.length() - tempConcat.length() ), " ") + tempConcat +
+                            "\r"
+                            );
+                    }
+
+                    // to simulate an animation
+                    Thread.sleep(400);
+
+                    }catch(InterruptedException e){
+                        Thread.currentThread().interrupt();
+                    }
+
+
+            }
+
+            /*
+            * To make sure the next line after the completed one
+            * doesn't override the printed out characters.
+            *
+            * inspiration from:
+            * https://stackoverflow.com/questions/852665/command-line-progress-bar-in-java
+            */
+            System.out.println();
+
+        }
+
+    }
+
     // overview of this program
     public Multiply(){
 
