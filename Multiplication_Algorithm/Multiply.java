@@ -319,6 +319,107 @@ public class Multiply {
 
     }
 
+     // Multiplication = Multiplier x Multiplicand
+    // product = x * y
+    public void multiplication(String x, String y){
+
+        int[] multiplier = splitDigits(y);
+        int[] multiplicand = splitDigits(x);
+
+     /*
+      * if user selects shortcut method
+      * the number of values correspond to the number of digits in the multiplier
+      * + 1 to include final result or product value
+     */
+        int[] intermediateValues = new int[y.length() + 1];
+        int intermediate; // elements of the intermediateValues array
+
+        int result = 0;
+
+        // intermediate values for partial-products method
+         int partial = 0;
+
+         methodSetup();
+
+         if(option.equals("1")){
+         System.out.println( setupBase );
+         }
+
+         // partial-product
+         // O(n^2) when without getting the number of spaces needed to left-align values
+         for(int i = 0; i < multiplier.length; i++){
+
+         intermediate = 0;
+
+             for(int j = 0; j < multiplicand.length; j++){
+
+                 partial = (multiplicand[j] * multiplier[i]);
+
+                 result += partial;
+                 intermediate += partial;
+
+                 if(option.equals("1")){
+
+                     try{
+
+                         /*
+                         * add the plus sign on the line with the last partial value
+                         * alternatively, find x.length * y.length to get the last nth partial value,
+                         * then use counter to keep track of iterations
+                         */
+                         if(j == (multiplicand.length - 1 ) && i == (multiplier.length - 1) ){
+
+                             // minus 3 for the 3 leading chars
+                             System.out.println(
+                                 " + " + stringRepeater(
+                                     (dashLine.length() - 3) - Integer.toString(partial).length(), " ")
+                                     + partial);
+
+                         }else{
+                             System.out.println(
+                                 stringRepeater(
+                                     dashLine.length() - Integer.toString(partial).length(), " ")
+                                     + partial);
+                         }
+
+                         // to simulate an animation
+                         Thread.sleep(400);
+
+                     }catch(InterruptedException e){
+                         Thread.currentThread().interrupt();
+                     }
+
+                 } // if
+
+             }
+
+             intermediateValues[i] = intermediate;
+
+
+         }
+
+         intermediateValues[intermediateValues.length - 1] = result;
+
+         // short-cut method
+         if(option.equals("2")){
+
+             printShortCutMethod(intermediateValues);
+             System.out.println(dashLine); // complete the workings with the final dash line
+
+         }
+         // otherwise complete the final prints for option 1
+         else{
+
+             System.out.println(
+                 dashLine +
+                 "\n" + stringRepeater( dashLine.length() - Integer.toString(result).length(), " ")
+                 + result
+             );
+             System.out.println(dashLine); // complete the workings with the final dash line
+         }
+
+     }
+
     // overview of this program
     public Multiply(){
 
@@ -326,6 +427,7 @@ public class Multiply {
         askUserOption();
         aboutMultiplication();
         askUserValues();
+        multiplication(x, y);
     }
 
 
