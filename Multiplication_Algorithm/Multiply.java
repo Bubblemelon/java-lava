@@ -251,6 +251,67 @@ public class Multiply {
 
     }
 
+    // to keep user within the program, i.e. the program loop
+    // provides the option to continue with the alternative option before ending the program
+    public void maintainUserInteraction(){
+        Scanner s = new Scanner(System.in);
+        String userInput = "";
+
+        // Note: This is tedious but I want to intentionally restrict the user's options for response.
+        while(true){
+
+            if(option.equals("1")){
+
+                userInput = prompt(
+                    "\n> Change to Standard Multiplication i.e. Option (2) also known as the short-cut method?",
+                    caseInsensitiveYesNo,
+                    "\n\u26D4  Error: To proceed with Option (2), please enter \"yes\" or \"y\"." +
+                    "\n           To end the program, enter \"no\" or \"n\". Your response is case-insensitive."
+                    );
+
+                option = "2";
+
+            }else{
+
+                userInput = prompt(
+                    "\n> Change to Partial-Products Multiplication method i.e. Option (1)?",
+                    caseInsensitiveYesNo,
+                    "\n\u26D4  Error: To proceed with Option (1), please enter \"yes\" or \"y\"." +
+                    "\n           To end the program, enter \"no\" or \"n\"." +
+                    "\n           Your response is case-insensitive."
+                    );
+
+                option = "1";
+            }
+
+            if(userInput.matches(caseInsensitiveYes)){
+
+                userInput = prompt(
+                    "\n> Do you want to change the value of the multiplicand, \"x\", or the multiplier, \"y\"?",
+                    caseInsensitiveYesNo,
+                    "\n\u26D4  Error: To proceed with the change, please enter \"yes\" or \"y\"." +
+                    "\n           To keep your current values x = " + x + " & y = " + y +
+                    ", enter \"no\" or \"n\"." +
+                    "\n           Your response is case-insensitive."
+                    );
+
+                    if(userInput.matches(caseInsensitiveYes)){
+                        askUserValues();
+                    }
+
+                multiplication(x, y);
+            }
+            else{
+
+                break;
+            }
+
+        }// loop
+
+        // happy face and balloon emoji
+        System.out.println("\n\uD83D\uDE04  See you again soon! \uD83C\uDF88");
+    }
+
     // to print the method for option 2
     public void printShortCutMethod(int[] intermediateValues){
 
@@ -428,6 +489,8 @@ public class Multiply {
         aboutMultiplication();
         askUserValues();
         multiplication(x, y);
+        //program loop
+        maintainUserInteraction();
     }
 
 
