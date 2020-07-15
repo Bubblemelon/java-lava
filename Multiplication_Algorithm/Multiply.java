@@ -496,5 +496,7 @@ public class Multiply {
 
     public static void main(String[] args) {
 
+        Multiply m = new Multiply();
+
     }
 }
