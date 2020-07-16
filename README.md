@@ -78,6 +78,8 @@ My practice scripts in Java ☕
 >
 > Rain.java is [TrappingRainWater.java](https://github.com/Bubblemelon/code-nibbles/blob/master/leetcode/TrappingRainWater.java) at my `code-nibbles` repo.
 
+### [Multiplication Algorithm](/Multiplication_Algorithm/)
+
 ### [More Java ☕ Stuff](https://github.com/cherylfong)
 
 See my Android app [repositories](https://github.com/cherylfong)! 📱
