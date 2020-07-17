@@ -80,6 +80,16 @@ My practice scripts in Java ☕
 
 ### [Multiplication Algorithm](/Multiplication_Algorithm/)
 
+The **partial-products multiplication** algorithm utilizes the commutative and associative properties of addition with the distributive (grouping) property of multiplication.
+
+> This algorithm multiplies each digit of one factor (the multiplicand) by each of the digits in the other factor (the multiplier) and taking into account each digit's place value.
+
+This [slide deck](/Multiplication_Algorithm/UChicago_Partial-Products-Algo.pdf) by the University of Chicago shows a simple demonstration on how the order of multiplication is inconsequential, by expanding the factors' digits with respect to its place value as expressions of addition.
+
+[![UChicago Partial-Product Multiplication Algorithm Slide 9](Multiplication_Algorithm/UChicago_Partial-Product-Algo_Slide-9.png)](/Multiplication_Algorithm/UChicago_Partial-Products-Algo.pdf)
+
+[PDF Source](http://everydaymath.uchicago.edu/teaching-topics/computation/)
+
 ### [More Java ☕ Stuff](https://github.com/cherylfong)
 
 See my Android app [repositories](https://github.com/cherylfong)! 📱
