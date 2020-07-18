@@ -90,6 +90,16 @@ This [slide deck](/Multiplication_Algorithm/UChicago_Partial-Products-Algo.pdf) 
 
 [PDF Source](http://everydaymath.uchicago.edu/teaching-topics/computation/)
 
+**Standard multiplication** is the short-cut method of the partial-products multiplication algorithm. This is the 4th grade algorithm that we are all familiar with.
+
+![](/Multiplication_Algorithm/Partial-Products-To-Standard-Form.png)
+
+[IMG Source](http://web.mnstate.edu/peil/MDEV102/U1/S8/Standard2.htm)
+
+This method is known as [Long Multiplication](https://mathworld.wolfram.com/LongMultiplication.html), Wolfram has a comprehensive description of this method.
+
+It is unfortunate 😟 that most students are unaware of how the standard multiplication algorithm is derived and are forced to memorize this method as is.
+
 ### [More Java ☕ Stuff](https://github.com/cherylfong)
 
 See my Android app [repositories](https://github.com/cherylfong)! 📱
