@@ -100,6 +100,10 @@ This method is known as [Long Multiplication](https://mathworld.wolfram.com/Long
 
 It is unfortunate 😟 that most students are unaware of how the standard multiplication algorithm is derived and are forced to memorize this method as is.
 
+> [Multiply.java](Multiplication_Algorithm/Multiply.java) is an interactive program that allows the user to see the calculation between the multiplicand and multiplier, by choosing a method of computation i.e. the partial-products multiplication or the standard multiplication method.
+>
+> See code comments for notes on implementation.
+
 ### [More Java ☕ Stuff](https://github.com/cherylfong)
 
 See my Android app [repositories](https://github.com/cherylfong)! 📱
