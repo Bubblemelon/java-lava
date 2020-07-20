@@ -104,6 +104,22 @@ It is unfortunate 😟 that most students are unaware of how the standard multip
 >
 > See code comments for notes on implementation.
 
+<details open><summary>Reason for creating this program:</summary>
+<p>
+
+My eight year old niece 👧 is to thank for creating this program. She saw me working on the terminal and curiously wanted to use it too. At the time, she was trying to master multiplication. Instantly I thought, she could learn multiplication on the terminal! 💡
+
+The point of this program is so that she can check her calculation as she works through multiplying larger numbers. The intention was not to be a game as there's many better graphical alternatives to doing this, this simply served as her reference. This also helped enforce her memory of the Multiplication Table.
+
+I know, she could have done this on a smartphone or calculator, but using the terminal kept her motivated. It made her feel like a grown-up.
+
+Her curiosity with the terminal is insatiable but at least now she understands the logic behind multiplication 🍎!
+
+**Share this with curious kids you know! Even better, please improve this program!**
+
+</p>
+</details>
+
 ### [More Java ☕ Stuff](https://github.com/cherylfong)
 
 See my Android app [repositories](https://github.com/cherylfong)! 📱
