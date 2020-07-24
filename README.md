@@ -4,7 +4,7 @@ My practice scripts in Java ☕
 
 ![Coffee Break Picture from Dribbble - credits to the person on dribbble for posting](https://cdn.dribbble.com/users/1294892/screenshots/3463897/tea-01.jpg)
 
-## Catalog  
+## Catalog
 
 ### [Histogram](Histogram.java)
 
@@ -44,12 +44,12 @@ My practice scripts in Java ☕
 
 > Option `1`, which allows the Online Store admin to add number of products to the store. In this case, only a maximum of 10 products are allowed. To see the available products for purchase, type in `2` to select option 2 i.e. _All Product Information in Store_. Finally, the user has `3` option to order a product or products by mentioning the product's number ID. This process is completed by typing `0`. Lastly, option `4` exits the program.
 >
-> Design Considerations:  
+> Design Considerations:
 > Ideally there should be more than 10 products in an online store and that a user (not the store admin) should not have access to adding products to this online store. This program was built for simplicity.
 
 ### [Max Profit](/Max_Profit)
 
-> [Stock.java](/Max_Profit/Stock.java) has only one function, i.e. `maxProfit()` that takes an array of stock prices of a particular day. This is my first attempt at the maxProfit problem, similar to [Stock Buy Sell to Maximize Profit](https://www.geeksforgeeks.org/stock-buy-sell/).  
+> [Stock.java](/Max_Profit/Stock.java) has only one function, i.e. `maxProfit()` that takes an array of stock prices of a particular day. This is my first attempt at the maxProfit problem, similar to [Stock Buy Sell to Maximize Profit](https://www.geeksforgeeks.org/stock-buy-sell/).
 > `maxProfit()` will return the price to buy and to sell at, that would generate the maximum profit within that given day.
 >
 > [Leetcode.java](/Max_Profit/Leetcode.java) contains my solution to the problem at [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/), a code challenge on LeetCode. I consider this an improvement to `Stock.java`. However, it does not have an optimal runtime.
@@ -58,7 +58,7 @@ My practice scripts in Java ☕
 
 ### [Hangman](/HangMan/Hangman.java)
 
-> This program mimics a simple [hangman game]( https://en.wikipedia.org/wiki/Hangman_(game) ).  
+> This program mimics a simple [hangman game]( https://en.wikipedia.org/wiki/Hangman_(game) ).
 > The user is allowed to define a word to guess and offer it to another player, using the same terminal where the program was executed.
 
 <img src="/Hangman/Hangman.gif" width=867.99 height=700 >
@@ -66,9 +66,9 @@ My practice scripts in Java ☕
 
 ### [Trapping Rain Water](/Trapping_Rain_Water/)
 
-> [Rain.java](/Trapping_Rain_Water/Rain.java) has only one function, i.e. `waterTrapped()` that takes an array of heights (could be heights of either valleys or buildings) and returns the amount of water collected/trapped between the bounds i.e. the valleys or buildings.  
+> [Rain.java](/Trapping_Rain_Water/Rain.java) has only one function, i.e. `waterTrapped()` that takes an array of heights (could be heights of either valleys or buildings) and returns the amount of water collected/trapped between the bounds i.e. the valleys or buildings.
 >
-> This function's approach iterates the array of heights from left to right and then in a separate loop from right to left. Each of these iterations store the maximum height encountered at an index of the heights array. The maximum height stored at an index of a current right or left element takes the value of its previous height unless a higher value is encountered at the heights array.   
+> This function's approach iterates the array of heights from left to right and then in a separate loop from right to left. Each of these iterations store the maximum height encountered at an index of the heights array. The maximum height stored at an index of a current right or left element takes the value of its previous height unless a higher value is encountered at the heights array.
 >
 > The purpose is to overlay the left and right arrays over each other and then find where water can actually be stored.
 >
