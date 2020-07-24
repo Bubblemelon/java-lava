@@ -90,7 +90,7 @@ This [slide deck](/Multiplication_Algorithm/UChicago_Partial-Products-Algo.pdf) 
 
 [PDF Source](http://everydaymath.uchicago.edu/teaching-topics/computation/)
 
-**Standard multiplication** is the short-cut method of the partial-products multiplication algorithm. This is the 4th grade algorithm that we are all familiar with.
+**Standard multiplication** is the short-cut method of the partial-products multiplication algorithm. This is the 3rd grade algorithm that we are all familiar with.
 
 ![](/Multiplication_Algorithm/Partial-Products-To-Standard-Form.png)
 
@@ -109,7 +109,7 @@ It is unfortunate 😟 that most students are unaware of how the standard multip
 
 My eight year old niece 👧 is to thank for creating this program. She saw me working on the terminal and curiously wanted to use it too. At the time, she was trying to master multiplication. Instantly I thought, she could learn multiplication on the terminal! 💡
 
-The point of this program is so that she can check her calculation as she works through multiplying larger numbers. The intention was not to be a game as there's many better graphical alternatives to doing this, this simply served as her reference. This also helped enforce her memory of the Multiplication Table.
+The point of this program is so that she can check her calculation as she works through multiplying larger numbers. The intention was not to be a game as there are better graphical alternatives; this simply served as her reference. She tells me that she can remember the Multiplication Table a lot easier now, but this might be purely from her own determination.
 
 I know, she could have done this on a smartphone or calculator, but using the terminal kept her motivated. It made her feel like a grown-up.
 
