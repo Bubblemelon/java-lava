@@ -116,8 +116,13 @@ I know, she could have done this on a smartphone or calculator, but using the te
 Her curiosity with the terminal is insatiable but at least now she understands the logic behind multiplication 🍎!
 
 **Share this with curious kids you know! Even better, please improve this program!**
-
 </p>
+</details>
+
+<details><summary>TODO: (1)</summary>
+
+- [ ] fix buggy carry-over animation in short-cut method. See [VioletCucumber Repl.it](https://repl.it/@bubblemelon/VioletCucumber)
+
 </details>
 
 ### [More Java ☕ Stuff](https://github.com/cherylfong)
