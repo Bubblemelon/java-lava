@@ -104,6 +104,8 @@ It is unfortunate 😟 that most students are unaware of how the standard multip
 >
 > See code comments for notes on implementation.
 
+![Multiply Demo gif.](/Multiplication_Algorithm/MultiplyDemo.gif)
+
 <details open><summary>Reason for creating this program:</summary>
 <p>
 
